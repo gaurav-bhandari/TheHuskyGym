@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css" />
@@ -10,8 +10,13 @@
       type="text/css"
       href="vendors/css/ionicons.min.css"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendors/css/animate.css"
+    />
     <link rel="stylesheet" type="text/css" href="resources/css/styles.css" />
-    <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap"
       rel="stylesheet"
@@ -27,22 +32,28 @@
             alt="The Husky Gym Logo"
             class="logo"
           />
-          <ul class="main-nav">
-            <li><a href="#">Programs</a></li>
-            <li><a href="#">How it works</a></li>
-            <li><a href="#">Our cities</a></li>
-            <li><a href="#">Sign up</a></li>
+          <img
+            src="resources/img/the_husky_gym_2.jpg"
+            alt="The Husky Gym Logo"
+            class="logo-small"
+          />
+          <ul class="main-nav js--main-nav">
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#works">How it works</a></li>
+            <li><a href="#cities">Our cities</a></li>
+            <li><a href="#plans">Sign up</a></li>
           </ul>
+          <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
         </div>
       </nav>
       <div class="fitness-text-box">
         <h1>We'll Help You.<br />Get to a Healthier Place.</h1>
-        <a class="btn btn-full" href="#">Gym near me</a>
-        <a class="btn btn-ghost" href="#">Learn more</a>
+        <a class="btn btn-full js--scroll-to-plans" href="#">Gym near me</a>
+        <a class="btn btn-ghost js--scroll-to-start" href="#">Learn more</a>
       </div>
     </header>
 
-    <section class="section-features">
+    <section class="section-features js--section-features">
       <div class="row">
         <h2>
           Challenge Yourself &mdash;
@@ -55,7 +66,7 @@
         </p>
       </div>
 
-      <div class="row">
+      <div class="row js--wp-1">
         <div class="col span-1-of-4 box">
           <i class="ion-ios-heart-outline icon-big"></i>
           <h3>Support</h3>
@@ -94,7 +105,7 @@
       </div>
     </section>
 
-    <section class="section-programs">
+    <section class="section-programs" id="programs">
       <ul class="programs-showcase clearfix">
         <li>
           <figure class="program-photo">
@@ -190,7 +201,7 @@
       </ul>
     </section>
 
-    <section class="section-steps">
+    <section class="section-steps" id="works">
       <div class="row">
         <h2>How it works &mdash; Simple as 1, 2, 3</h2>
       </div>
@@ -199,7 +210,7 @@
           <img
             src="resources/img/App_Mockup_iPhone.png"
             alt="The Husky Gym app on iPhone"
-            class="app-screen"
+            class="app-screen js--wp-2"
           />
         </div>
         <div class="col span-1-of-2 steps-box">
@@ -235,11 +246,11 @@
       </div>
     </section>
 
-    <section class="section-cities">
+    <section class="section-cities"  id="cities">
       <div class="row">
         <h2>We're currently in these cities</h2>
       </div>
-      <div class="row">
+      <div class="row js--wp-3">
         <div class="col span-1-of-4 box">
           <img src="resources/img/Delhi.jpg" alt="Delhi" />
           <h3>Delhi</h3>
@@ -323,7 +334,8 @@
               <p>
                 Oscar has worked in the Mental Health field for 10 years. He
                 Studied Psychology with an emphasis in adolescent counseling at
-                College of the Ozarks. Currently, he is studying American Sign Language.
+                College of the Ozarks. Currently, he is studying American Sign
+                Language.
               </p>
               <ul class="social-links">
                 <li>
@@ -352,9 +364,9 @@
               <p>Lead Trainer</p>
               <h3>Leonard Smith</h3>
               <p>
-                Leonard has had a lifelong passion for
-                athletics and competition. He played football, basketball, and
-                baseball at Sanford High School. He is state’s top football player.
+                Leonard has had a lifelong passion for athletics and
+                competition. He played football, basketball, and baseball at
+                Sanford High School. He is state’s top football player.
               </p>
               <ul class="social-links">
                 <li>
@@ -384,8 +396,8 @@
               <p>
                 James is an experienced and passionate coach who works with
                 clients having different vision for their body using the
-                intentional change process, high performance development
-                as well as transition coaching.
+                intentional change process, high performance development as well
+                as transition coaching.
               </p>
               <ul class="social-links">
                 <li>
@@ -415,9 +427,9 @@
               <h3>Maricar Collins</h3>
               <p>
                 Maricar started CrossFit approximately five years ago and
-                quickly fell in love with the sport. She
-                absolutely loves helping new athletes grow and discover what
-                CrossFit can offer to everyone!
+                quickly fell in love with the sport. She absolutely loves
+                helping new athletes grow and discover what CrossFit can offer
+                to everyone!
               </p>
               <ul class="social-links">
                 <li>
@@ -483,13 +495,13 @@
       </div>
     </section>
 
-    <section class="section-plans">
+    <section class="section-plans js--section-plans" id="plans">
       <div class="row">
         <h2>Start getting healthy today</h2>
       </div>
       <div class="row">
         <div class="col span-1-of-3">
-          <div class="plan-box">
+          <div class="plan-box js--wp-4">
             <div>
               <h3>Premium</h3>
               <p class="plan-price">$399 <span>/ month</span></p>
@@ -693,9 +705,11 @@
       </div>
     </footer>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
     <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
-    
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/script.js"></script>
   </body>
 </html>
