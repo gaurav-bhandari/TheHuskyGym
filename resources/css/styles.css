@@ -359,7 +359,7 @@ header {
 .program-photo img {
   opacity: 0.4;
   width: 100%;
-  height: 250px;
+  height: auto;
   -webkit-transform: scale(1.15);
   transform: scale(1.15);
   -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
